@@ -14,8 +14,8 @@ load_dotenv()
 
 # Configuration
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-SUPABASE_URL = 'https://hvcxzalcpsimnmlqugpk.supabase.co'
-SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh2Y3h6YWxjcHNpbW5tbHF1Z3BrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk3NTkyNDMsImV4cCI6MjA2NTMzNTI0M30.Hw-m9dBk380OFRRhvWq-Cro4tozFK5oW_X4DLPUZr3Q'
+SUPABASE_URL = os.getenv('SUPABASE_URL')
+SUPABASE_KEY = os.getenv('SUPABASE_KEY')
 PORT = int(os.getenv('PORT', 5050))
 SYSTEM_MESSAGE = (
     "You are a helpful and bubbly AI assistant who loves to chat about "
